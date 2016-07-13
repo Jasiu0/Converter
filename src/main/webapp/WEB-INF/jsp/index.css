@@ -40,122 +40,156 @@
 .main{
 	width: 100%;
 	background-color: #ffffff;
+	position: relative;
 }
 
 #calculator{
 	width: 40%;
 	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+	margin-top: 1%;
+	margin-left: 1%;
+	height: 320px;
 }
 
 #site-navigation{
 	background-color: #232323;
-border-top: 4px solid #289dcc;
+	border-top: 4px solid #289dcc;
+	color: #ffffff;
+	font-size: 30px;
+	width: 100%;
 }
 
-.lol{
-content: "\f0c9";
-font-family: FontAwesome;
+#site-navigation a{
+	color: #ffffff;
 }
 
-.configureConverter{
+#site-navigation a:hover{
+	color: #289dcc;
+}
+
+.options-bar{
+	margin-left: 10px;
+}
+
+.Converter-sub-title{
 	background-color: #289dcc; 
 	padding-top: 10px;
 	padding-bottom: 10px;
-	color: #ffffff;
 	padding-left: 10px;
-		border-color:  #ffffff #000000  #000000 #ffffff;
-border-style: solid;
-border-width: 2px 2px 4px 2px;
+	color: #ffffff;
+	width: 100%;
+	margin: auto;
+	display: block;
+	
 }
 
 .input-data{
-	width: 100%;
-	/*margin-left: 30px;*/
-	position: relative;
-		
+	width: 90%;	
+	display: block;
+    margin: auto;
+    position: relative;
 }
 
 input[type="text"], textarea {
- width:100%;
-  background-color : #555555; 
-  color: #ffffff;
-  height: 40px;
-  text-align: center;
+	width:100%;
+  	background-color : #289dcc;
+  	color: #ffffff;
+  	text-align: center;
+  	padding-bottom: 10px;
+  	padding-top: 10px;
   
 }
 
-
 .Arrow{
-    margin: 0 auto;
     font-size: 30px;
-    position: absolute;
-    text-decoration: none;   
-    	left:160;
-    	top: 2; 
+    text-decoration: none; 
+	position:absolute;
+	right: 5;
+	top: 2;
 }
-
 
 .Arrow a{
-	background-color:#555555;
+	background-color: #289dcc;
 	color:white;
- 	padding: 0px 10px;
+ 	padding: 0px 8px;
 	}
+	
 .Arrow a:hover{
 	cursor:pointer;
-	color:#00ffff;
+	color:#232323;
  	}
 	
-
-
-.EuroValue{
-	width: 100;
-}
-
-
-.euro{
-
-	background-color:#555555;
+.Currency-from{
+	background-color: #289dcc;
 	color:white;
-	width: 190;
-	margin-left: 30px;
+	width: 90%;
 	text-align: center;
 	padding-top:10px; 
 	padding-bottom: 10px;
+	margin: auto;
 
 }
-
 .select-currency{
-	width: 25%;
-	margin-left: 30px;
-	text-align: right;
-}
-/*
-.calculate-btn{
-	width: 15%;
-    margin: 0 auto;
+	width: 90%;
+	margin: auto;
+	text-align: center;
 }
 
-
-.calculate-btn a{
-	background-color:#555555;
-	color:white;
-	
- 	padding: 8px 18px;
-	border: 1px solid #FFFFFF;
-}
-.calculate-btn a:active {
-  position: relative;
-  bottom: 2px;
+.currency-calculator{
+	width: 57%;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+	margin-top: 1%;
+	height: 320px;
 }
 
 
-*/
+
+.ccOutputBx {
+    background-color: #ffffff;
+    width: 76%;
+    border-top: 1px solid #cccccc;
+    border-bottom: 3px solid #cccccc;
+    padding: 5px 0;
+    margin: 25px auto 10px;
+}
 
 
+.ccOutputTxt {
+    color:#232323;
+    display: block;
+    padding: 0 0 0 5px;
+}
 
+.ccOutputRslt {
+    font-size: 2.8em;
+    color: #289dcc;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    clear: both;
+    line-height: 1.8;
+}
 
+.calOutputTS {
+    display: block;
+    font-size: .8em;
+    color:#232323;
+    width: 88%;
+    text-align: right;
+}
 
+.rates-link{
+	padding-left: 40px;
+}
 
+.rates-link a{
+	text-decoration: none;
+		color:#289dcc;
+}
+
+.rates-link a:hover{
+	text-decoration:underline; 
+}
 
 
 @media screen and (min-width:0px){
@@ -169,7 +203,14 @@ input[type="text"], textarea {
    	  	#header{
 			text-align: center;
 	}
-   	
+   	#calculator{
+	width: 98%;
+	}
+		.currency-calculator{
+	width: 98%;
+	position: relative;
+	margin-left: 1%;
+	}
 }
 
 @media screen and (min-width:600px){
@@ -185,8 +226,20 @@ input[type="text"], textarea {
 			text-align: left;
 		text-indent: 40px;
 	}
+	  	#calculator{
+	width: 40%;
+	}
 	
+			.currency-calculator{
+	width: 57%;
+	position:absolute;
+	top:10%;
+	right: 0 ;
+	margin-right: 1%;
+	}
 }
+
+
 
 
 @media screen and (min-width:1000px){

@@ -21,14 +21,13 @@
 			</div>
 			<div class="main">
 			<nav id="site-navigation" class="main-navigation clearfix" role="navigation">
-<div class="inner-wrap clearfix">
-<div class="home-icon">
-<a href="http://gravitytales.com/" title="Gravity Tales"><i class="fa fa-home"></i></a>
-<i class="fa fa-bars" aria-hidden="true"></i>
-
+<div class = "options-bar">
+<a href="http://localhost:8080/converter/" title="Home"><i class="fa fa-home"></i></a>
+<a title="Navigate"><i class="fa fa-bars" aria-hidden="true"></i></a>
+</div>
 </nav>
 	<div id="calculator">
-				<div class="configureConverter">Configure converter</div><br>
+				<div class="Converter-sub-title">Configure converter</div><br><Br>
 					<div class="input-data">
 					
 						<input type="text" class="EuroValue" value="1.00" >
@@ -36,15 +35,31 @@
 						<a>&#8250;</a>
 						</div>
 					</div> <br><br>
-					<div class="euro">
-						EUR <h1> ${greeting}</h1>
+					<div class="Currency-from">
+						EUR
 					</div> <Br><br>
 					<div class="select-currency">
 					<input type="text" value="" >
 					<input type="hidden" name="from" id="from_var" value="EUR">
-					</div><br>
+					</div><br><br>
+	</div>
+	<div class="currency-calculator">
+			<div class="Converter-sub-title">
+				Currency Calculator</div><br>
+				
+						<div class="ccOutputBx">
+			 		<span class="ccOutputTxt">1.00 EUR =</span>		  
+		 			 <span class="ccOutputRslt">0.83<span class="ccOutputCode"> GBP</span></span>
 				</div>
-			</div>
-		</div>
+				<span class="calOutputTS">${date}</h1></span>
+				<br><br>
+				<div class="rates-link">
+				View
+				<a href="" >EUR Rates Table ${parseXml}</a>
+				</div>
+				<br><Br>
+				</div>	<br>
+			</div>		
+		</div>		
 	</body>
 </html>
