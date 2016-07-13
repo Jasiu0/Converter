@@ -1,0 +1,208 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+
+.custom-background{
+	background: url(http://image.desk7.net/3D%20Digital%20Art%20Wallpapers/342_1280x800.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+
+}
+
+
+#page{
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#header{
+
+	width: 100%;
+	background-color: #ffffff; 	
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+#title{
+ 	color:#289dcc;
+}
+#side-description{
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.1);
+	color: #666666;
+}
+
+.main{
+	width: 100%;
+	background-color: #ffffff;
+}
+
+#calculator{
+	width: 40%;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1);
+}
+
+#site-navigation{
+	background-color: #232323;
+border-top: 4px solid #289dcc;
+}
+
+.lol{
+content: "\f0c9";
+font-family: FontAwesome;
+}
+
+.configureConverter{
+	background-color: #289dcc; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	padding-left: 10px;
+		border-color:  #ffffff #000000  #000000 #ffffff;
+border-style: solid;
+border-width: 2px 2px 4px 2px;
+}
+
+.input-data{
+	width: 100%;
+	/*margin-left: 30px;*/
+	position: relative;
+		
+}
+
+input[type="text"], textarea {
+ width:100%;
+  background-color : #555555; 
+  color: #ffffff;
+  height: 40px;
+  text-align: center;
+  
+}
+
+
+.Arrow{
+    margin: 0 auto;
+    font-size: 30px;
+    position: absolute;
+    text-decoration: none;   
+    	left:160;
+    	top: 2; 
+}
+
+
+.Arrow a{
+	background-color:#555555;
+	color:white;
+ 	padding: 0px 10px;
+	}
+.Arrow a:hover{
+	cursor:pointer;
+	color:#00ffff;
+ 	}
+	
+
+
+.EuroValue{
+	width: 100;
+}
+
+
+.euro{
+
+	background-color:#555555;
+	color:white;
+	width: 190;
+	margin-left: 30px;
+	text-align: center;
+	padding-top:10px; 
+	padding-bottom: 10px;
+
+}
+
+.select-currency{
+	width: 25%;
+	margin-left: 30px;
+	text-align: right;
+}
+/*
+.calculate-btn{
+	width: 15%;
+    margin: 0 auto;
+}
+
+
+.calculate-btn a{
+	background-color:#555555;
+	color:white;
+	
+ 	padding: 8px 18px;
+	border: 1px solid #FFFFFF;
+}
+.calculate-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+
+
+*/
+
+
+
+
+
+
+
+
+@media screen and (min-width:0px){
+   #title {
+     font-size:16pt; 
+   }
+      #side-description{
+   	margin-top: -15px;
+   	font-size: 10pt;
+   	}
+   	  	#header{
+			text-align: center;
+	}
+   	
+}
+
+@media screen and (min-width:600px){
+   #title {
+     font-size:24pt; 
+   }
+   #side-description{
+   	margin-top: -20px;
+   	  	font-size: 16pt;
+   	}
+   
+      	#header{
+			text-align: left;
+		text-indent: 40px;
+	}
+	
+}
+
+
+@media screen and (min-width:1000px){
+   #title {
+     font-size:32pt; 
+   }
+   #side-description{
+   	margin-top: -20px;
+   	  	font-size: 22pt;
+   	}
+   	
+   	 	#header{
+		text-align: left;
+		text-indent: 40px;
+	}
+	
+}
+   	
+}
